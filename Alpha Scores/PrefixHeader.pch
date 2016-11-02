@@ -1,0 +1,75 @@
+//
+//  PrefixHeader.pch
+//
+//
+//  Created by Neha Parmar on 7/27/16.
+//  Copyright © 2016 Neha Parmar. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kAppPinkTintColor [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.000]
+
+#define BlueColor [UIColor colorWithRed:64.0/255.0 green:143.0/255.0 blue:247.0/255.0 alpha:1.0]
+
+#define fontSizeForIncreaseLimit (SCREEN_HEIGHT <= 568 ? -1.f : (SCREEN_HEIGHT <= 667 ? 0.0f:2.f));
+#define heightForKmLabel (SCREEN_HEIGHT <= 568 ? 23 : (SCREEN_HEIGHT <= 667 ? 23:24));
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+
+#import "FloatEffect.h"
+#import "LabelHeight.h"
+#import "RedTextField.h"
+#import "BlueTextField.h"
+
+
+#import "SettingTableViewCell.h"
+#import "ManageTeamCell.h"
+
+#import "AppDelegate.h"
+
+#import "UIViewController+MFSideMenuAdditions.h"
+#import "MFSideMenuContainerViewController.h"
+#import "LeftSideViewController.h"
+#import "WelcomeViewController.h"
+
+#import "AFHTTPRequestOperation.h"
+#import "AFHTTPClient.h"
+
+#import "ProgressHUD.h"
+
+#import "DashBoardViewController.h"
+#import "CreateTeamViewController.h"
+#import "CreateCompetitiors.h"
+#import "NewMatchScout.h"
+#import "NewPittScout.h"
+#import "BestFitTeamViewController.h"
+#import "NewPitScoutContainer.h"
+#import "AdminViewController.h"
+
+
+#import "AuthenticateNewUserCell.h"
+
+#import "Red1_ViewController.h"
+#import "Red2_ViewController.h"
+
+#import "Blue1_ViewController.h"
+#import "Blue2_ViewController.h"
+#import "SettingViewController.h"
+#import "TeamViewController.h"
+
+#import "ManageTeamVIewController.h"
+#import "ReportViewController.h"
+#import "BestTeamTableViewCell.h"
+#import "ReportManageCell.h"
+#import "CompetitionListCell.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
